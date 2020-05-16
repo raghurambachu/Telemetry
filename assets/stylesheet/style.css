@@ -540,6 +540,7 @@ h3 {
 .tertiary-section .tertiary-left {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../media/pic03.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .tertiary-section .quotes {
   display: inline-block;
@@ -568,6 +569,7 @@ h3 {
 .tertiary-section .tertiary-right {
   background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../media/pic04.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 @media all and (max-width: 595px) {
   .tertiary-section .tertiary-right {
