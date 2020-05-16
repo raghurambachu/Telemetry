@@ -86,6 +86,9 @@ a {
   letter-spacing: 1.2px;
   cursor: pointer;
 }
+.btn:hover, .contact-section .contact-right .btn-send:hover, .quarternary-section .btn-learn:hover, .select-section .btn-learn:hover, .select-section button:hover, .hero-section .hero-container .btn-started:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
 
 img {
   object-fit: cover;
@@ -116,6 +119,7 @@ h3 {
 .header {
   background: transparent;
   position: fixed;
+  z-index: 99;
   width: 100%;
 }
 .header .nav {
@@ -156,12 +160,45 @@ h3 {
   font-weight: 300;
   font-size: 0.9rem;
 }
+.header .nav-item:nth-child(2) {
+  position: relative;
+}
+.header .nav-item:nth-child(2):hover > .dropdown-menu {
+  display: block;
+}
+.header .dropdown-menu {
+  top: 125%;
+  position: absolute;
+  background: #fff;
+  padding: 0.2em 0;
+  z-index: 4;
+  display: none;
+}
+.header .dropdown-menu .arrow {
+  position: absolute;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  top: -10px;
+  transform: translateX(120%) rotate(45deg);
+}
+.header .dropdown-menu a {
+  color: #a8a8a8;
+  display: inline-block;
+  padding: 0.2em 2em;
+}
+.header .dropdown-menu a:hover {
+  color: #F28F85;
+}
+.header .dropdown-menu li {
+  width: 80px;
+}
 
 .hero-section {
   background-image: url("../media/pic01.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   padding: 7.5em 0 5em;
   border-top: 10px solid #F28F85;
 }
@@ -412,6 +449,12 @@ h3 {
 .select-section .select-left, .select-section .select-right {
   padding: 1em;
 }
+.select-section .consequat, .select-section .feugiat {
+  display: none;
+}
+.select-section .selected-btn {
+  background: #ffc600;
+}
 .select-section .select-title {
   margin-bottom: 1.5em;
 }
@@ -648,6 +691,9 @@ h3 {
   display: inline-block;
   padding: 0.5em 0.75em;
   border: 1px solid #fff;
+}
+.contact-section .social-icons:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 .contact-section .contact-right {
   width: 70%;

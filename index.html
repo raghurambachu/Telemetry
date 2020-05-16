@@ -23,14 +23,32 @@
             </a>
             <ul class="nav-menu flex">
                 <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-chevron-down"></i> Dropdown</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-chevron-down"></i> Dropdown</a>
+                    
+                    <ul class="dropdown-menu">
+                        <span class="arrow"></span>
+                        <a href="#">
+                            <li>Option 1</li>
+                        </a>
+                        <a href="#">
+                            <li>Option 2</li>
+                        </a>
+                        <a href="#">
+                            <li>Option 3</li>
+                        </a>
+                        <a href="#">
+                            <li>Sub Menu</li>
+                        </a>
+                    </ul>
+                </li>
                 <li class="nav-item"><a class="nav-link" href="#">Generic</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Elements</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="hero-section">
+        <section class="hero-section parallax" >
             <div class="hero-container flex">
                 <div class="hero-laptop flex">
                     <i class="fas fa-laptop"></i>
@@ -156,23 +174,65 @@
         <section class="select-section">
             <div class="select-container container">
                 <div class="select-buttons flex">
-                    <button class="btn-aliquam">Aliquam</button><!--
-                    --><button class="btn-consequat">Consequat</button><!--
-                    --><button class="btn-feugiat">Feugiat</button>
+                    <button class="btn-aliquam btn-select">Aliquam</button><!--
+                    --><button class="btn-consequat btn-select">Consequat</button><!--
+                    --><button class="btn-feugiat btn-select">Feugiat</button>
                 </div>
-                <div class="select-info-container flex">
-                    <div class="select-left">
-                       <h2 class="select-title">
-                        Adipiscing sed impedit volutpat magna cursus lorem
-                       </h2>
-                       <p class="select-content">
-                        Perspiciatis saepe, mollitia itaque magna etiam dolor sit amet. Sed rerum porro sint iure illo accusantium in amet totam, est. Ipsa nobis ad optio impedit quidem inventore libero, aperiam, nesciunt dolor sit amet.
-                       </p>
-                       <button class="btn-learn">Learn More</button>
+                <div class="aliquam">
+                    <div class="select-info-container flex" id="aliquam">
+                        <div class="select-left">
+                           <h2 class="select-title">
+                            Adipiscing sed impedit volutpat magna cursus lorem
+                           </h2>
+                           <p class="select-content">
+                            Perspiciatis saepe, mollitia itaque magna etiam dolor sit amet. Sed rerum porro sint iure illo accusantium in amet totam, est. Ipsa nobis ad optio impedit quidem inventore libero, aperiam, nesciunt dolor sit amet.
+                           </p>
+                           <button class="btn-learn">Learn More</button>
+                        </div>
+                        <div class="select-right">
+                            <div class="select-image">
+                                <img src="./assets/media/pic05.jpg" alt="pic05">
+                            </div>
+                        </div>
                     </div>
-                    <div class="select-right">
-                        <div class="select-image">
-                            <img src="./assets/media/pic05.jpg" alt="pic05">
+                </div>
+                <div class="consequat">
+                    <div class="select-info-container flex" id="consequat">
+                        <div class="select-left">
+                           <h2 class="select-title">
+                            Ipsum lorem accumsan sed nullam feugiat veroeros
+                        </h2>
+                           <p class="select-content">
+                            Veritatis, accusantium, nemo. Officia neque explicabo nihil! Sunt vero reprehenderit, necessitatibus atque, enim autem animi illum quaerat at, corporis dolore ipsam. Voluptatem culpa sapiente sed veroeros.
+
+
+                           </p>
+                           <button class="btn-learn">Learn More</button>
+                        </div>
+                        <div class="select-right">
+                            <div class="select-image">
+                                <img src="./assets/media/pic05.jpg" alt="pic05">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feugiat">
+                    <div class="select-info-container flex" id="feugiat">
+                        <div class="select-left">
+                           <h2 class="select-title">
+                            Adipiscing sed impedit volutpat magna cursus lorem
+                        </h2>
+                           <p class="select-content">
+                            Perspiciatis saepe, mollitia itaque magna etiam dolor sit amet. Sed rerum porro sint iure illo accusantium in amet totam, est. Ipsa nobis ad optio impedit quidem inventore libero, aperiam, nesciunt dolor sit amet.
+
+
+                           </p>
+                           <button class="btn-learn">Learn More</button>
+                        </div>
+                        <div class="select-right">
+                            <div class="select-image">
+                                <img src="./assets/media/pic05.jpg" alt="pic05">
+                            </div>
                         </div>
                     </div>
                 </div>
