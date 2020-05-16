@@ -1,0 +1,131 @@
+
+.contact-section{
+    background: $orange;
+    padding: 4em 0;
+    color: $white;
+    .contact-container{
+        // max-width: $width;
+        // margin: 0 auto;
+        justify-content: space-between;
+        @media all and (max-width:1000px){
+            flex-direction: column;
+            width: 90%;
+            justify-content: flex-start;
+            align-items: flex-start;
+           
+        }
+        .contact-left{
+            width: 25%;
+            @media all and (max-width:545px){
+                width: 50%;
+            }
+        }
+        .contact-right{
+            @media all and (max-width:545px){
+                margin-top: 1.5em;
+                width: 100%;
+            }
+            
+        }
+    }
+    h2{
+        margin-bottom: 1.5em;
+    }
+    .contact-left{
+        width: 25%;
+        @media all and (max-width:1000px){
+            width: 70%;
+        }
+    }
+    li{
+        display: flex;
+        margin-bottom: 1em;
+    }
+    span{
+        display: inline-block;
+    }
+    .contact-icon{
+        margin-right: 1em;
+    }
+    .contact-content{
+        font-weight: 300;
+        font-size: 0.9rem;
+    }
+    a{
+        color: white;
+    }
+    .social-menu-icons{
+        justify-content: space-between;
+        margin-top: 1.5em;
+       
+    }
+    .social-icons{
+        display: inline-block;
+        padding: 0.5em 0.75em;
+        border: 1px solid $white;
+        &:hover{
+            background: rgba($color: $white, $alpha: 0.2);
+        }
+    }
+    .contact-right{
+        width: 70%;
+       .contact-inputs{
+           display: flex;
+           justify-content: space-between;
+           @media all and (max-width:545px){
+               flex-direction: column;
+               input{
+                   width: 100%;
+               }
+           }
+       }
+       .contact-name,.contact-email,.contact-message{
+           background: $orange;
+           border: 0.5px solid $white;
+           font-size: $font-size;
+           font-family: $font-family;
+           padding: 0.75em 1em;
+           border-radius: 0.25em;
+           outline: 0;
+       }
+       .contact-name,.contact-email{
+           display: inline-block;
+           width: 48%;
+           margin-bottom: 1em;
+          
+       }
+        .contact-message{
+            width: 100%;
+            resize: none;
+        }
+        .btn-send{
+            @extend .btn;
+            border:0.75px solid $white;
+            color: $white;
+            margin-top: 2em;
+        }
+    }
+    input::placeholder{
+        color: $white;
+        font-weight: 200;
+    }
+
+    .horizontal-line{
+        margin-top: 3.75em;
+        border: 0.5px solid rgb(228, 225, 225);
+        @media all and (max-width:1000px){
+            width: 90%;
+        }
+    }
+    .footer{
+        text-align: center;
+        font-weight: 100;
+        font-size: 0.8rem;
+        margin-top: 1rem;
+    }
+    @media all and (max-width:1000px){
+           .contact-right{
+               width: 100%;
+           }    
+    }
+}

@@ -1,0 +1,48 @@
+html{
+    font-size: $font-size;
+    @media all and (max-width:545px){
+        font-size: 12px;
+    }
+}
+
+// General
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $font-family;
+    line-height: 1.5;
+}
+
+a{
+    text-decoration: none;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn{
+    background: transparent;
+    border-radius:0.4em;
+    padding: 1em 3em;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    cursor: pointer;
+    &:hover{
+        background-color: rgba($color: $white, $alpha: 0.2);
+    }
+}
+
+img{
+    object-fit: cover;
+}
+
+.container{
+    max-width: $width;
+    margin: 0 auto;
+    @media all and (max-width:1200px){
+        max-width: 1000px;
+    }
+}

@@ -1,0 +1,63 @@
+.tertiary-section{
+    text-align: center;
+    color: $white;
+    .tertiary-left,.tertiary-right{
+        padding: 7em 5em;
+        width: 50%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tertiary-left{
+        background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("../media/pic03.jpg");
+        background-repeat: no-repeat;
+        
+    }
+    .quotes{
+        display: inline-block;
+      
+    }
+
+    .tertiary-quotes{
+        width: 4em;
+        height: 4em;
+        border-radius: 50%;
+        background: $orange;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.25rem;
+    }
+    .tertiary-title{
+        margin-top: 0.75em;
+        margin-bottom: 1em;
+    }
+    .tertiary-name{
+        color: $orange;
+        font-weight: 500;
+    }
+    .tertiary-note{
+        font-size: 0.85rem;
+        font-weight: 300;
+    }
+    .tertiary-right{
+        background:linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)), url("../media/pic04.jpg");
+        background-repeat: no-repeat;
+        @media all and (max-width:595px){
+            margin-top: -40px;
+        }
+    }
+    h2{
+        font-size: 1.75rem;
+        font-weight: 300;
+    }
+    @media all and (max-width:1000px){
+        flex-direction: column;
+        .tertiary-left,.tertiary-right{
+            width: 100%;
+        }
+        .tertiary-right{
+            margin-top: -30px;
+        }
+    }
+    
+}

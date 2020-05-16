@@ -224,6 +224,9 @@ h3 {
     margin: 1em 0;
     font-size: 2rem;
   }
+  .header .toggle:checked ~ .nav-menu .nav-link {
+    font-size: 1.5rem;
+  }
 }
 
 .hero-section {
@@ -261,7 +264,7 @@ h3 {
   justify-content: center;
   align-items: center;
 }
-.hero-section .hero-container .hero-laptop .fa-laptop {
+.hero-section .hero-container .fa-laptop {
   color: #F28F85;
   display: inline-block;
   font-size: 2rem;
@@ -535,7 +538,7 @@ h3 {
   align-items: center;
 }
 .tertiary-section .tertiary-left {
-  background: url("../media/pic03.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../media/pic03.jpg");
   background-repeat: no-repeat;
 }
 .tertiary-section .quotes {
@@ -563,7 +566,7 @@ h3 {
   font-weight: 300;
 }
 .tertiary-section .tertiary-right {
-  background: url("../media/pic04.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../media/pic04.jpg");
   background-repeat: no-repeat;
 }
 @media all and (max-width: 595px) {
@@ -764,6 +767,10 @@ h3 {
   color: #fff;
   margin-top: 2em;
 }
+.contact-section input::placeholder {
+  color: #fff;
+  font-weight: 200;
+}
 .contact-section .horizontal-line {
   margin-top: 3.75em;
   border: 0.5px solid #e4e1e1;
@@ -780,9 +787,6 @@ h3 {
   margin-top: 1rem;
 }
 @media all and (max-width: 1000px) {
-  .contact-section .contact-left {
-    width: 40%;
-  }
   .contact-section .contact-right {
     width: 100%;
   }

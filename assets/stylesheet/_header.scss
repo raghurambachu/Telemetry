@@ -1,0 +1,118 @@
+// Header Section
+.header{
+    background: transparent;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    .nav{
+       
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5em 2em;
+        .nav-item{
+            margin-left: 1.5em;
+        }
+        .logo{
+            justify-content: center;
+            align-items: center;
+            z-index: 99;
+        }
+        .logo-span{
+            padding-right: 1em;
+            font-size: 1.25rem;
+        }
+        .site-span{
+            padding-left: 0.75rem;
+        }
+        .line{
+            display: inline-block;
+            border-left: 1px solid $white;
+            opacity: 0.75;
+            height: 1.5rem;
+        }
+        .fa-chevron-down{
+            font-size: 0.75rem;
+        }
+        @media all and (max-width:1000px){
+           .nav-menu{
+               display: none;
+           }
+        }
+    }
+    a{
+        color: $white;
+        font-weight: 300;
+        font-size: 0.9rem;
+    }
+    .nav-item:nth-child(2){
+        position: relative;
+        &:hover > .dropdown-menu{
+            display: block;
+        }
+        
+    }
+    .dropdown-menu{
+        top: 125%;
+        position: absolute;
+        background: $white;
+        padding: 0.2em 0;
+        z-index: 4;
+        .arrow{
+            position: absolute;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: $white;
+            
+            top: -10px;
+            //top: 100%;
+            transform: translateX(120%) rotate(45deg);
+        }
+        a{
+            color: $grey;
+            display: inline-block;
+            padding:0.2em 2em
+        }
+        a:hover{
+            color: $orange;
+        }
+        li{
+            width: 80px;
+        }
+        display: none;
+    }
+    .bars,.toggle{
+        display: none;
+    }
+    @media all and (max-width:1000px){
+        .bars{
+            display: block;
+            color: $white;
+            font-size: 24px;
+            z-index: 99;
+        }
+
+        .toggle:checked ~ .nav-menu{
+            display: block;
+            position: fixed;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: rgba($color: $orange, $alpha: 0.95);
+            font-weight: 700;
+            .nav-item{
+                margin: 1em 0;
+                font-size: 2rem;
+            }
+            .nav-link{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

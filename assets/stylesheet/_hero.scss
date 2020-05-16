@@ -1,0 +1,54 @@
+// Hero Section
+.hero-section{
+    background-image: url("../media/pic01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-attachment: fixed;
+    padding: 7.5em 0 5em;
+    border-top: 10px solid $orange;
+    .hero-container{
+        color: $white;
+        max-width: 645px;
+        margin: 0 auto;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @media all and (max-width:1000px){
+            padding: 0 2em;
+        }
+        h1{
+            letter-spacing: 1.35px;
+            margin-top: 0.8em;
+            font-weight: 300;
+            font-size: 2.5rem;
+        }
+        .hero-laptop{
+            width: 5.5rem;
+            height: 5.5rem;
+            border-radius: 50%;
+            background: $white;
+            justify-content: center;
+            align-items: center; 
+        }
+        .fa-laptop{
+            color: $orange;
+            display: inline-block;
+            font-size: 2rem;
+        }
+        .white-line{
+            border-bottom: 1px solid $white;
+            opacity: 0.6;
+            padding: 1em 0;
+            width: 100%;
+            margin-bottom: 2.8em;
+        }
+        .btn-started{
+            @extend .btn;
+            border: 1px solid $white;
+            color: $white;
+            
+        }
+
+    }
+}

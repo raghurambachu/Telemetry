@@ -1,0 +1,82 @@
+.secondary-section{
+    background: $orange;
+    color: $white;
+    text-align: center;
+    padding: 5em 0;
+    .secondary-container{
+        // max-width: $width;
+        // margin: 0 auto;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        @media all and (max-width:1000px){
+            width: 90%;
+           .secondary-info-1{
+               border-bottom: 1px solid $white;
+           }
+           .secondary-info-2{
+            border-bottom: 1px solid $white;
+        }
+        @media all and (max-width:545px){
+            flex-direction: column;
+            width: 85%;
+            justify-content: center;
+            align-items: center;
+        
+        }
+            
+        }
+        .secondary-info{
+            width: 25%;
+            padding:0 1.5em;
+            @media all and (max-width:1000px){
+                padding: 1em;
+                
+            }
+        }
+        .secondary-info-1,.secondary-info-2,.secondary-info-3{
+            border-right: 1px solid rgb(230, 229, 229);
+            
+        }
+        
+        .secondary-info-num,.secondary-info-title{
+            font-weight: 300;
+        }
+        .secondary-info-num{
+            font-size: 3rem;
+        }
+        .secondary-info-title{
+            font-size: 1.1rem;
+            margin-bottom: 1.25rem;
+        }
+        .secondary-info-content{
+            font-size: 0.8rem;
+            font-weight: 300;
+        }
+        .secondary-info-2{
+            @media all and (max-width:1000px){
+                border-right: 0;
+               
+            }
+        }
+        .secondary-info{
+            @media all and (max-width:1000px){
+                width: 50%;
+            }
+        }
+        .secondary-info{
+            @media all and (max-width:545px){
+                border-right: 0;
+                border-bottom: 1px solid rgb(235, 227, 227);
+                width: 100%;
+            }
+        }
+        .secondary-info:last-child{
+            @media all and (max-width:545px){
+                border-right: 0;
+                border-bottom:0
+            }
+        }
+    }
+   
+    
+}

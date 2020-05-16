@@ -1,0 +1,72 @@
+.quarternary-section{
+    padding: 6em 0;
+    font-weight: 300;
+    .quarternary-container{
+        // max-width: $width;
+        // margin: 0 auto;
+        justify-content: space-between;
+        @media all and (max-width:1000px){
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .quarternary-left,.quarternary-right{
+                width: 90%;
+            }
+        }
+    }
+    .quarternary-left,.quarternary-right{
+        width: 47.5%;
+    }
+    h2{
+        margin-bottom: 1.5em;
+    }
+    .quarternary-image{
+        border-radius: 0.5em;
+        width: 100%;
+    }
+    .quarternary-content{
+        margin: 1em 0;
+    }
+    .btn-learn{
+        @extend .btn;
+        border: 1px solid black;
+    }
+    .quarternary-right{
+        .progress-line-holder{
+            position: relative;
+            margin-top: 1.25em;
+        }
+        .black-line,.red-line{
+            border-top: 1px solid black;
+            position: absolute;
+            width: 100%;
+        }
+        .red-line{
+            border-top: 1px solid orangered;
+            width: 60%;
+        }
+        .progress{
+            margin: 1.25em 0;
+        }
+        .progress-percent{
+            padding-top: 0.25rem;
+            font-size: 0.85rem;
+        }
+        .progress-30{
+            width: 30%;
+        }
+        .progress-70{
+            width: 70%;
+        }
+        .progress-40{
+            width: 40%;
+        }
+        .progress-50{
+            width: 50%;
+        }
+        .progress-60{
+            width: 60%;
+        }
+    }
+    
+}
