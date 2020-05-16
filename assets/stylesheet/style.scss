@@ -135,6 +135,7 @@ h3{
         .logo{
             justify-content: center;
             align-items: center;
+            z-index: 99;
         }
         .logo-span{
             padding-right: 1em;
@@ -199,6 +200,37 @@ h3{
             width: 80px;
         }
         display: none;
+    }
+    .bars,.toggle{
+        display: none;
+    }
+    @media all and (max-width:1000px){
+        .bars{
+            display: block;
+            color: $white;
+            font-size: 24px;
+            z-index: 99;
+        }
+
+        .toggle:checked ~ .nav-menu{
+            display: block;
+            position: fixed;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: rgba($color: $orange, $alpha: 0.95);
+            font-weight: 700;
+            .nav-item{
+                margin: 1em 0;
+                font-size: 2rem;
+            }
+        }
     }
 }
 
@@ -664,7 +696,7 @@ h3{
            
         }
         .contact-left{
-            width: 20%;
+            width: 25%;
             @media all and (max-width:545px){
                 width: 50%;
             }
@@ -767,6 +799,14 @@ h3{
         font-weight: 100;
         font-size: 0.8rem;
         margin-top: 1rem;
+    }
+    @media all and (max-width:1000px){
+           .contact-left{
+               width: 40%;
+           }
+           .contact-right{
+               width: 100%;
+           }    
     }
 }
 
