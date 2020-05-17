@@ -2,8 +2,12 @@
 .header{
     background: transparent;
     position: fixed;
-    z-index: 99;
+    z-index: 100;
     width: 100%;
+    .active{
+        border-bottom: 5px solid $orange;
+        padding-bottom: 0.2em;
+    }
     .nav{
        
         justify-content: space-between;
@@ -11,6 +15,16 @@
         padding: 1.5em 2em;
         .nav-item{
             margin-left: 1.5em;
+        
+        }  
+        @media all and (min-width:1000px){
+            .nav-item:hover > a{
+                color: #ffc600;
+            } 
+        }
+        
+        .nav-item:nth-child(2):hover{
+            border-bottom: 0;
         }
         .logo{
             justify-content: center;
@@ -23,6 +37,8 @@
         }
         .site-span{
             padding-left: 0.75rem;
+            color: $white;
+            font-weight: 300;
         }
         .line{
             display: inline-block;
@@ -51,35 +67,60 @@
         }
         
     }
+    .dropdown-menu::before{
+        transform: translateX(50%) rotate(45deg);
+        background-color: #ffffff;
+        box-shadow: -2px -2px 3px -1px rgba(0, 0, 0, 0.1);
+        content: '';
+        height: 0.75em;
+        position: absolute;
+        right: 4em;
+        top: -0.375em;
+        width: 0.75em;
+    }
     .dropdown-menu{
         top: 125%;
         position: absolute;
         background: $white;
-        padding: 0.2em 0;
+        padding: 0.6em 0;
         z-index: 4;
-        .arrow{
-            position: absolute;
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-            background: $white;
-            
-            top: -10px;
-            //top: 100%;
-            transform: translateX(120%) rotate(45deg);
-        }
+        border-radius: 0.5em;
         a{
             color: $grey;
             display: inline-block;
-            padding:0.2em 2em
+            padding:0.44em 1em
         }
         a:hover{
             color: $orange;
         }
         li{
-            width: 80px;
+            width: 130px;
+        }
+        li:hover{
+            background: $orange;
+            a{
+                color:$white;
+            }
         }
         display: none;
+    }
+    .sub-menu{
+        padding: 0.4em 0;
+        display: none;
+        position: absolute;
+        transform: translateX(-100%);
+        background: $white;
+        border-radius: 0.5em;
+        top: 67.7%;   
+    }
+    .sub-menu-li:hover > .sub-menu{
+        display: block;
+        a{
+            color: $grey;
+        }
+        li:hover a{
+            color: $white;
+        }
     }
     .bars,.toggle{
         display: none;

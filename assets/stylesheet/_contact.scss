@@ -1,7 +1,7 @@
-
+// Contact Section
 .contact-section{
     background: $orange;
-    padding: 4em 0;
+    padding: 4em 0 2em;
     color: $white;
     .contact-container{
         // max-width: $width;
@@ -12,10 +12,12 @@
             width: 90%;
             justify-content: flex-start;
             align-items: flex-start;
-           
         }
         .contact-left{
-            width: 25%;
+           
+            @media all and (max-width:1000px){
+                width: 40%;
+            }
             @media all and (max-width:545px){
                 width: 50%;
             }
@@ -81,12 +83,15 @@
        }
        .contact-name,.contact-email,.contact-message{
            background: $orange;
-           border: 0.5px solid $white;
+           border: 0.395px solid rgb(211, 207, 207);
            font-size: $font-size;
            font-family: $font-family;
            padding: 0.75em 1em;
            border-radius: 0.25em;
            outline: 0;
+       }
+       .contact-name:focus,.contact-email:focus,.contact-message:focus{
+           border: 0.5px solid $white;
        }
        .contact-name,.contact-email{
            display: inline-block;
@@ -103,9 +108,16 @@
             border:0.75px solid $white;
             color: $white;
             margin-top: 2em;
+            @media all and (max-width:545px){
+                width: 100%;
+            }
         }
     }
     input::placeholder{
+        color: $white;
+        font-weight: 200;
+    }
+    textarea::placeholder{
         color: $white;
         font-weight: 200;
     }
@@ -117,11 +129,8 @@
             width: 90%;
         }
     }
-    .footer{
-        text-align: center;
-        font-weight: 100;
-        font-size: 0.8rem;
-        margin-top: 1rem;
+    @media all and (max-width:1200px){
+        padding: 1em;
     }
     @media all and (max-width:1000px){
            .contact-right{

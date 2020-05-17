@@ -13,35 +13,69 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/stylesheet/style.css">
-    <script src="./js/index.js" defer></script>
+    <script src="./assets/js/index.js" defer></script>
 </head>
 <body>
+    <!-- Header Section -->
     <header class="header">
         <nav class="nav flex">
-            <a href="#" class="logo flex">
-                <span class="logo-span">Telemetry</span><span class="line"></span> <span class="site-span">By Pixelarity</span>
-            </a>
+           <div class="center">
+                <a href="#" class="logo">
+                    <h1 class="logo-span">Telemetry</h1>
+                </a>
+                <span class="line"></span>
+                 <h4 class="site-span">By Pixelarity</h4>
+           </div>
                 <label class="bars" class="bars" for="toggle"><i class="fas fa-bars"></i></label>
                 <input type="checkbox" id="toggle" class="toggle">
             <ul class="nav-menu flex">
-                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
                 <li class="nav-item">
                     <a class="nav-link" href="#"><i class="fas fa-chevron-down"></i> Dropdown</a>
                     
                     <ul class="dropdown-menu">
-                        <span class="arrow"></span>
-                        <a href="#">
-                            <li>Option 1</li>
-                        </a>
-                        <a href="#">
-                            <li>Option 2</li>
-                        </a>
-                        <a href="#">
-                            <li>Option 3</li>
-                        </a>
-                        <a href="#">
-                            <li>Sub Menu</li>
-                        </a>
+                            <li>
+                                <a href="#">
+                                    Option 1
+                                 </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Option 2
+                                 </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Option 3
+                                 </a>
+                            </li>
+                            <li class="sub-menu-li">
+                                <a href="#">
+                                    Sub Menu
+                                 </a>
+                                 <ul class="sub-menu">
+                                     <li class="sub-menu-item">
+                                        <a class="sub-menu-link" href="#">
+                                            Option 1
+                                        </a>
+                                     </li>
+                                     <li class="sub-menu-item">
+                                        <a class="sub-menu-link" href="#">
+                                            Option 2
+                                        </a>
+                                     </li>
+                                     <li class="sub-menu-item">
+                                        <a class="sub-menu-link" href="#">
+                                            Option 3
+                                        </a>
+                                     </li>
+                                     <li class="sub-menu-item">
+                                        <a class="sub-menu-link" href="#">
+                                            Option 4
+                                        </a>
+                                     </li>
+                                 </ul>
+                            </li>
                     </ul>
                 </li>
                 <li class="nav-item"><a class="nav-link" href="#">Generic</a></li>
@@ -50,6 +84,7 @@
         </nav>
     </header>
     <main>
+        <!-- Hero Section -->
         <section class="hero-section parallax" >
             <div class="hero-container flex">
                 <div class="hero-laptop flex">
@@ -59,12 +94,12 @@
                     Ipsum dolor sit amet feugiat et veroeros adipiscing
                 </h1>
                 <div class="white-line">
-
                 </div>
                 <button class="btn-started">Get Started</button>
             </div>
         </section>
 
+        <!-- Primary Section -->
         <section class="primary-container container flex">
             <div class="primary-left">
                 <div class="primary-image-div">
@@ -82,9 +117,9 @@
                         </div>
                         <div class="info-content">
                             <h3>Sed veroeros</h3>
-                            <div>
+                            <p>
                                 Lorem ipsum dolor sit amet nulla etiam feugiat sed adipiscing.
-                            </div>
+                            </p>
                         </div>
                     </div>
                     <div class="info info2 flex">
@@ -93,9 +128,9 @@
                         </div>
                         <div class="info-content">
                             <h3>Magna etiam</h3>
-                            <div>
+                            <p>
                                 Lorem ipsum dolor sit amet nulla etiam feugiat sed adipiscing.
-                            </div>
+                            </p>
                         </div>
                     </div>
                     <div class="info info3 flex">
@@ -104,9 +139,9 @@
                         </div>
                         <div class="info-content">
                             <h3>Nulla consequat</h3>
-                            <div>
+                            <p>
                                 Lorem ipsum dolor sit amet nulla etiam feugiat sed adipiscing.
-                            </div>
+                            </p>
                         </div>
                     </div>
                     <div class="info info4 flex">
@@ -115,64 +150,66 @@
                         </div>
                         <div class="info-content">
                             <h3>Euismod morbi</h3>
-                            <div>
+                            <p>
                                 Lorem ipsum dolor sit amet nulla etiam feugiat sed adipiscing.
-                            </div>
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Secondary Section -->
         <section class="secondary-section">
             <div class="secondary-container container flex">
                 <article class="secondary-info secondary-info-1">
-                    <div class="secondary-info-num">
+                    <h2 class="secondary-info-num">
                         128
-                    </div>
-                    <div class="secondary-info-title">
+                    </h2>
+                    <h3 class="secondary-info-title">
                         Sed magna
-                    </div>
-                    <div class="secondary-info-content">
+                    </h3>
+                    <p class="secondary-info-content">
                         Lorem ipsum dolor nulla feugiat adipiscing
-                    </div>
+                    </p>
                 </article>
                 <article class="secondary-info secondary-info-2">
-                    <div class="secondary-info-num">
+                    <h2 class="secondary-info-num">
                         640
-                    </div>
-                    <div class="secondary-info-title">
+                    </h2>
+                    <h3 class="secondary-info-title">
                         Etiam dolor 
-                    </div>
-                    <div class="secondary-info-content">
+                    </h3>
+                    <p class="secondary-info-content">
                         Lorem ipsum dolor nulla feugiat adipiscing
-                    </div>
+                    </p>
                 </article>
                 <article class="secondary-info secondary-info-3">
-                    <div class="secondary-info-num">
+                    <h2 class="secondary-info-num">
                         256
-                    </div>
-                    <div class="secondary-info-title">
+                    </h2>
+                    <h3 class="secondary-info-title">
                         Nullam amet
-                    </div>
-                    <div class="secondary-info-content">
+                    </h3>
+                    <p class="secondary-info-content">
                         Lorem ipsum dolor nulla feugiat adipiscing
-                    </div>
+                    </p>
                 </article>
                 <article class="secondary-info secondary-info-4">
-                    <div class="secondary-info-num">
+                    <h2 class="secondary-info-num">
                         768
-                    </div>
-                    <div class="secondary-info-title">
+                    </h2>
+                    <h3 class="secondary-info-title">
                         Sit euismod
-                    </div>
-                    <div class="secondary-info-content">
+                    </h3>
+                    <p class="secondary-info-content">
                         Lorem ipsum dolor nulla feugiat adipiscing
-                    </div>
+                    </p>
                 </article>
             </div>
         </section>
 
+        <!-- Select Section -->
         <section class="select-section">
             <div class="select-container container">
                 <div class="select-buttons flex">
@@ -193,7 +230,7 @@
                         </div>
                         <div class="select-right">
                             <div class="select-image">
-                                <img src="./assets/media/pic05.jpg" alt="pic05">
+                                <img src="./assets/media/pic05.jpg" alt="Sleeping">
                             </div>
                         </div>
                     </div>
@@ -213,7 +250,7 @@
                         </div>
                         <div class="select-right">
                             <div class="select-image">
-                                <img src="./assets/media/pic05.jpg" alt="pic05">
+                                <img src="./assets/media/pic05.jpg" alt="Sleeping Consequat">
                             </div>
                         </div>
                     </div>
@@ -233,7 +270,7 @@
                         </div>
                         <div class="select-right">
                             <div class="select-image">
-                                <img src="./assets/media/pic05.jpg" alt="pic05">
+                                <img src="./assets/media/pic05.jpg" alt="Sleeping Feugiat">
                             </div>
                         </div>
                     </div>
@@ -241,6 +278,7 @@
             </div>
         </section>
 
+        <!-- Tertiary Section -->
         <section class="tertiary-section flex">
             <div class="tertiary-left flex">
                 <div class="quotes">
@@ -264,6 +302,7 @@
             </div>
         </section>
 
+        <!-- Quarternary Section -->
         <section class="quarternary-section">
             <div class="quarternary-container container flex">
                 <div class="quarternary-left">
@@ -272,71 +311,42 @@
                     <div class="quarternary-image-div">
                         <img class="quarternary-image" src="./assets/media/pic06.jpg" alt="Way to life">
                     </div>
-                    <div class="quarternary-content">
+                    <p class="quarternary-content">
                         Maecenas id feugiat nunc. Integer gravida augue libero, quis pellentesque amet pharetra a. Ut sagittis ipsum nec velit porttitor, sed convallis ligula pellentesque. Mauris et dignissim sem lacinia lorem ipsum dolor.
-                    </div>
+                    </p>
                     <button class="btn-learn">Learn More</button>
                 </div>
-                <div class="quarternary-right">
-                    <div class="progress">
-                        <p class="progress-type">Ipsum amet</p>
-                        <div class="progress-line-holder">
-                            <div class="black-line"></div>
-                            <div class="red-line progress-60"></div>
-                        </div>
-                        <div class="progress-percent">
-                            60%
-                        </div>
-                    </div>
-
-                    <div class="progress">
-                        <p class="progress-type">Adipiscing feugiat</p>
-                        <div class="progress-line-holder">
-                            <div class="black-line"></div>
-                            <div class="red-line progress-50"></div>
-                        </div>
-                        <div class="progress-percent">
-                            50%
-                        </div>
-                    </div>
-
-                    <div class="progress">
-                        <p class="progress-type">Dolor ligula </p>
-                        <div class="progress-line-holder">
-                            <div class="black-line"></div>
-                            <div class="red-line progress-40"></div>
-                        </div>
-                        <div class="progress-percent">
-                            40%
-                        </div>
-                    </div>
-
-                    <div class="progress">
-                        <p class="progress-type">Libero magna</p>
-                        <div class="progress-line-holder">
-                            <div class="black-line"></div>
-                            <div class="red-line progress-70"></div>
-                        </div>
-                        <div class="progress-percent">
-                            70%
-                        </div>
-                    </div>
-
-                    <div class="progress">
-                        <p class="progress-type">Nec lacinia
-                        </p>
-                        <div class="progress-line-holder">
-                            <div class="black-line"></div>
-                            <div class="red-line progress-30"></div>
-                        </div>
-                        <div class="progress-percent">
-                            30%
-                        </div>
-                    </div>
+                <div class="quarternary-right progress-bar">
+                    <div class="progress-item">
+                        <h6>Ipsum amet</h6>
+                        <progress value="60" max="100"></progress>
+                        <p>60%</p>
+                      </div>
+                      <div class="progress-item">
+                        <h6>Adipiscing feugiat</h6>
+                        <progress value="90" max="100"></progress>
+                        <p>90%</p>
+                      </div>
+                      <div class="progress-item">
+                        <h6>Dolor ligula</h6>
+                        <progress value="75" max="100"></progress>
+                        <p>75%</p>
+                      </div>
+                      <div class="progress-item">
+                        <h6>Libero magna</h6>
+                        <progress value="45" max="100"></progress>
+                        <p>45%</p>
+                      </div>
+                      <div class="progress-item">
+                        <h6>Nec lacinia</h6>
+                        <progress value="55" max="100"></progress>
+                        <p>55%</p>
+                      </div>
                 </div>
             </div>
         </section>
 
+        <!-- Contact Section -->
         <section class="contact-section">
             <div class="contact-container container flex">
                 <div class="contact-left">
@@ -346,25 +356,25 @@
                             <span class="contact-icon">
                                 <i class="fas fa-home"></i>
                             </span>
-                            <span class="contact-content">
+                            <address class="contact-content">
                                 1234 Fictional Street #5432 Nashville, TN 00000-0000
-                            </span>
+                            </address>
                         </li>
                         <li>
                             <span class="contact-icon">
                                 <i class="fas fa-phone"></i>
                             </span>
-                            <span class="contact-content">
+                            <a href="#" class="contact-content">
                                 (000) 000-0000
-                            </span>
+                            </a>
                         </li>
                         <li>
                             <span class="contact-icon">
                                 <i class="far fa-envelope"></i>
                             </span>
-                            <span class="contact-content">
+                            <a href="mailto:info@untitled.tld" class="contact-content">
                                 info@untitled.tld
-                            </span>
+                            </a>
                         </li>
                     </ul>
 
@@ -408,25 +418,25 @@
                 </div>
                 <div class="contact-right">
                     <h2>Email Us</h2>
-                    <div class="contact-input-container">
+                    <form class="contact-input-container">
                         <div class="contact-inputs flex">
                             <input type="text" class="contact-name" placeholder="Name">
-                            <input type="text" class="contact-email" placeholder="Email">
+                            <input type="email" class="contact-email" placeholder="Email">
                         </div>
                         <div>
-                            <textarea name="message" class="contact-message" id="" cols="30" rows="10"></textarea>
+                            <textarea name="message" placeholder="Message" class="contact-message" id="" cols="30" rows="10"></textarea>
                         </div>
                         <button class="btn-send">Send Message</button>
-                    </div>
+                    </form>
                 </div>
             </div>
             <div class="horizontal-line container">
 
             </div>
-            <div class="footer">
-                &copy; Untitled. All rights reserved.
-            </div>
         </section>
     </main>
+    <footer class="footer">
+        <small>&copy; Untitled. All rights reserved.</small>
+    </footer>
 </body>
 </html>

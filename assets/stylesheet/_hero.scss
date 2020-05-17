@@ -1,10 +1,10 @@
 // Hero Section
 .hero-section{
-    background-image: url("../media/pic01.jpg");
+    background:linear-gradient(rgba(#000,0.3),rgba(#000,0.3)),url("../media/pic01.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     // background-attachment: fixed;
-    padding: 7.5em 0 5em;
+    padding: 9.5em 0 8em;
     border-top: 10px solid $orange;
     .hero-container{
         color: $white;

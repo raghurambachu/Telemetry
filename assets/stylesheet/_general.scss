@@ -1,3 +1,5 @@
+// General
+
 html{
     font-size: $font-size;
     @media all and (max-width:545px){
@@ -5,7 +7,6 @@ html{
     }
 }
 
-// General
 *,*::after,*::before{
     box-sizing: border-box;
 }
@@ -21,6 +22,12 @@ a{
 
 .flex{
     display: flex;
+}
+
+.center{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .btn{
