@@ -574,6 +574,8 @@ h3 {
 }
 .select-section .btn-aliquam {
   background: #fff;
+  color: #F28F85;
+  transform: scaleY(1.06);
 }
 
 .tertiary-section {

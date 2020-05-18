@@ -33,6 +33,13 @@ selectSection_DOM.addEventListener("click",function(event){
         aliquam_DOM.style.display = "block";
         consequat_DOM.style.display = "none";
         feugiat_DOM.style.display = "none";
+        aliquamBtn_DOM.style.color = "#F28F85";
+        consequatBtn_DOM.style.color = "#a8a8a8";
+      
+        feugiatBtn_DOM.style.color = "#a8a8a8";
+        feugiatBtn_DOM.style.transform = "scaleY(1)";
+        aliquamBtn_DOM.style.transform = "scaleY(1.06)";
+        consequatBtn_DOM.style.transform = "scaleY(1)";
     } else if (element.classList.contains("btn-consequat")){
         aliquamBtn_DOM.style.background = "#f5f5f5";
         consequatBtn_DOM.style.background = "white";
@@ -43,6 +50,12 @@ selectSection_DOM.addEventListener("click",function(event){
         aliquam_DOM.style.display = "none";
         consequat_DOM.style.display = "block";
         feugiat_DOM.style.display = "none";
+        aliquamBtn_DOM.style.color = "#a8a8a8";
+        consequatBtn_DOM.style.color = "#F28F85";
+        feugiatBtn_DOM.style.color = "#a8a8a8";
+        feugiatBtn_DOM.style.transform = "scaleY(1)";
+        aliquamBtn_DOM.style.transform = "scaleY(1)";
+        consequatBtn_DOM.style.transform = "scaleY(1.06)";
     } else {
         aliquamBtn_DOM.style.background = "#f5f5f5";
         consequatBtn_DOM.style.background = "#f5f5f5";
@@ -53,6 +66,12 @@ selectSection_DOM.addEventListener("click",function(event){
         aliquam_DOM.style.display = "none";
         consequat_DOM.style.display = "none";
         feugiat_DOM.style.display = "block";
+        aliquamBtn_DOM.style.color = "#a8a8a8";
+        consequatBtn_DOM.style.color = "#a8a8a8";
+        feugiatBtn_DOM.style.color = "#F28F85";
+        feugiatBtn_DOM.style.transform = "scaleY(1.06)";
+        aliquamBtn_DOM.style.transform = "scaleY(1)";
+        consequatBtn_DOM.style.transform = "scaleY(1)";
     }
 })
 
